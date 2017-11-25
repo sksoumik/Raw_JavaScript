@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>events</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+  <nav id="closenav">
+
+  	<div onclick="toggleNav()">  
+    <!--this only works when mouse is hover over the area-->
+  		
+  	</div>
+  </nav>
+
+  <script>
+      var navStatus = true;
+
+  	 function toggleNav () {
+
+      if (navStatus == true) {
+
+          document.getElementById("closenav").style.left = "-300px";
+          navStatus = false;
+
+      }
+
+       else if (navStatus == false) {
+
+          document.getElementById("closenav").style.left = "0px";
+          
+          navStatus = true;
+
+
+      }
+      
+      
+  	 
+
+  	 	
+  	 }
+
+ // there are a huge number of HTML events. for details go to: 
+ // https://www.w3schools.com/tags/ref_eventattributes.asp 
+  </script>
+
+
+</body>
+
+</html>
